@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fou you</title>
+    <title>JS</title>
     <style type="text/css">
         body{
             background: url("./images/税费计算器blue.png");
@@ -13,12 +13,23 @@
             height: 100%;
         }
         @keyframes myfirst {
-            from{opacity: 0}
-            to{opacity: 100}
+            0%{opacity: 0}
+            25%{opacity: 100}
+            50%{opacity: 0}
+            100%{opacity: 0}
         }
-        h1,p {
-            animation: myfirst 3s infinite;
+        @keyframes mysecond {
+            0%{opacity: 0}
+            50%{opacity: 0}
+            75%{opacity: 100}
+            100%{opacity: 0}
         }
+        /*h1,p {*/
+            /*animation: myfirst 3s infinite;*/
+        /*}*/
+        #love {animation: myfirst 2.8s infinite;}
+        #me {animation:  mysecond 2.9s infinite;}
+
     </style>
 
 </head>
@@ -28,10 +39,10 @@
     <source src="wav/bree.mp3"  type="audio/mpeg">
 
 </audio>
-<h1>静夜思</h1>
-<p>床前明月光，</p>
-<p>疑是地上霜。</p>
-<p>举头望明月，</p>
-<p>低头思故乡。</p>
+<h1>breezeblocks</h1>
+
+<p id="love">    I love you so I love you so </p>
+<p id="me">   我深爱着你，我深爱着你</p>
+
 </body>
 </html>
